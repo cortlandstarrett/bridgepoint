@@ -513,8 +513,8 @@ p_${an.body}\
 .// - put in by wgt
 .print "Time is: ${info.date}"
 .assign send_changes = package.is_eclipse_plugin
-.if (mc_class_only == "")
-  .// Translate all OAL unless looking for a specific class.
+.if ((mc_class_only == "") and (mc_ss_only == ""))
+  .// Translate all OAL unless looking for a specific package or class.
   .invoke translate_all_oal( mc_root_pkg, application_root_class, send_changes );
 .end if
 .print "Time is: ${info.date}"
@@ -2186,7 +2186,7 @@ ${gsm.body}\
 .end for .// each package
 .//
 .//
-.if ((translate_enabled == true) and (mc_class_only == ""))
+.if (((translate_enabled == true) or (mc_ss_only != "")) and (mc_class_only == ""))
   .invoke gfh = get_file_header("${package.name}.${package.application_root_class}.java")
 ${gfh.body}\
 
