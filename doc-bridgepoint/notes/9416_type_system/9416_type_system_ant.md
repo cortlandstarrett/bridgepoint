@@ -74,13 +74,13 @@ returns the length of the side of the rhombus. Consider that the type
 `rectangle` has a unary operator `diagonal_length` which returns the length of
 the diagonal of the rectangle. The type `square` automatically inherits both of
 these valid operators. Operators may be redefined for each type however. For
-example, each different quadrilateral type may have their own `area` operator
+example, each different quadrilateral type may have its own `area` operator
 that works in different specific ways. Note also, that according to the
 definition of the model, every square is also a rhombus and a rectangle. We
 understand that this holds to be true.
 
 Note that along with regular operators such as `+`, `-`, `not`, `and`, `->`,
-etc. Activity invocations are also operators that take parameters. Just as
+etc., activity invocations are also operators that take parameters. Just as
 `side_length` is defined for `rhombus` type and implicitly defined for every
 subtype of `rhombus`, a function `foo(int)` is defined for parameter type
 integer, it is implicitly defined for any subtype of integer such as
@@ -107,7 +107,7 @@ shall be prioritized over strict adherence to the model
 4.2 The type system shall provide a comprehensive set of builtin types organized
 in a natural hierarchy  
 4.3 All types definable in MASL shall be representable in xtUML  
-4.4 The type system shall be name identifier based and not unique ID based  
+4.4 The type system shall be name identifier based (not unique ID based)  
 4.4.1 Scoping rules shall be defined to prevent name collision and provide a
 strategy for type visibility and shadowing  
 4.4.2 The concept of "type reference" shall be added to logically separate type
