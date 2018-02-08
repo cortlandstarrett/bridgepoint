@@ -18548,7 +18548,7 @@ INSERT INTO S_SYNC
 	'Sub_expr_loop7_end',
 	'ParserValidateFunction: TRUE',
 	'if (param.b2_conjunction2_id != GD::NULL_UNIQUE_ID() )
-  op_id = ::binary_operator_create( a1_text: "or", a2_dt_name: "boolean" );
+  op_id = ::binary_operator_create( a1_text: "or", a2_dt_name: "boolean", a3_token:param.a1_rule_token );
   lhs_id = param.b1_conjunction1_id;
   if ( param.a3_ruleid_name != param.b1_conjunction1_id )
     lhs_id = param.a3_ruleid_name;
@@ -19268,7 +19268,7 @@ INSERT INTO S_SYNC
 	'Conjunction_loop8_end',
 	'ParserValidateFunction: TRUE',
 	'if (param.b2_relational_expr2_id != GD::NULL_UNIQUE_ID() )
-  op_id = ::binary_operator_create( a1_text: "and", a2_dt_name: "boolean" );
+  op_id = ::binary_operator_create( a1_text: "and", a2_dt_name: "boolean", a3_token:param.a1_rule_token );
   lhs_id = param.b1_relational_expr1_id;
   if ( param.a3_ruleid_name != param.b1_relational_expr1_id )
     lhs_id = param.a3_ruleid_name;
@@ -19836,7 +19836,7 @@ INSERT INTO S_SYNC
 	'Comparison_operator_validate',
 	'ParserValidateFunction: TRUE',
 	'
-return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "boolean" );
+return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "boolean", a3_token:param.a1_rule_token );
 
 
 
@@ -20554,7 +20554,7 @@ INSERT INTO S_SYNC
 	'Plus_or_minus_validate',
 	'ParserValidateFunction: TRUE',
 	'
-return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "" );
+return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "", a3_token:param.a1_rule_token );
 
 
 
@@ -21633,7 +21633,7 @@ INSERT INTO S_SYNC
 	'Mult_op_validate',
 	'ParserValidateFunction: TRUE',
 	'
-return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "" );
+return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "", a3_token:param.a1_rule_token );
 
 
 
@@ -38900,7 +38900,7 @@ INSERT INTO S_SYNC
 	"00000000-0000-0000-0000-000000000000",
 	'Set_operator_validate',
 	'ParserValidateFunction: TRUE',
-	'return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "" );',
+	'return ::binary_operator_create( a1_text: param.a3_text, a2_dt_name: "", a3_token:param.a1_rule_token );',
 	"ba5eda7a-def5-0000-0000-000000000005",
 	1,
 	'',

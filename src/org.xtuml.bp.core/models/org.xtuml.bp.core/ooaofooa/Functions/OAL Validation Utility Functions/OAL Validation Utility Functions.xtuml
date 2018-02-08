@@ -828,6 +828,8 @@ ParserUtilityFunction: TRUE
 	'create object instance bin of V_BIN;
 bin.Operator = param.a1_text;
 create object instance val of V_VAL;
+val.LineNumber = ::getLineNumber( rule_token:param.a3_token );
+val.StartPosition = ::getColumn( rule_token:param.a3_token );
 current_scope = ::get_current_scope();
 select any blk from instances of ACT_BLK where (selected.Block_ID == current_scope);
 relate val to blk across R826;
@@ -872,6 +874,15 @@ INSERT INTO S_SPARM
 	0,
 	'',
 	"2b79043f-c319-4a5f-a51a-017d06af19af",
+	'');
+INSERT INTO S_SPARM
+	VALUES ("a03764bb-d49c-499d-b98a-5c70a3818330",
+	"93875e49-23ac-4e9a-89ef-0c7c840e2458",
+	'a3_token',
+	"89e59e5c-3853-4d30-9b45-6246db5f3d7b",
+	0,
+	'',
+	"c28f7da0-4f0d-451f-8f99-a8375c567fc9",
 	'');
 INSERT INTO PE_PE
 	VALUES ("93875e49-23ac-4e9a-89ef-0c7c840e2458",
