@@ -41,17 +41,9 @@ more trouble than it is worth.
 4.1 `Model Class.Numb` shall be deleted from the metamodel.  
 4.2 `Package.Num_Rng` shall be deleted from the metamodel.  
 4.3 Existing models shall be upgraded when next persisted.  
-4.3.1 Existing models shall not be upgraded unless changes are made.  
-4.3.2 `Load and Persist` will upgrade a model in place removing the
-`Model Class.Numb` and `Package.Num_Rng` attribute values from the
-persisted files.  
 4.4 Users shall be prevented from editing class numbers and number ranges.  
-4.4.1 A class number will not be visible on the canvas of a class diagram.  
-4.4.2 A class number will not be visible in the Properties View.  
-4.4.3 A class number range will not be visible on the canvas of a package.  
-4.4.4 A class number range will not be visible in the Properties View.  
 4.5 In places where the editor and/or model compilers sorted classes by
-`Numb`, they will be changed to sort by `Name`.  
+`Numb`, they shall sort by `Name` with `Key_Lett` as secondary key.  
 4.6 MC-3020 shall not refer to `Model Class.Numb`.  
 4.7 User documentation that refers to class numbers and class number ranges
 shall be updated.  
