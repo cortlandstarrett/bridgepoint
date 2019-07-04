@@ -9,7 +9,7 @@ This document describes testing for a new Association Editor.
 == 2 Introduction and Background
 
 This document outlines a test plan to manually test the new association
-editor built to resolve <<dr-1>>.
+editor built to resolve <<dr-1,11554 Association Editor>>.
 
 == 3 Use Cases
 
@@ -41,7 +41,8 @@ least one identifier in each participating class is interesting.
 
 For each of 3.1.1 through 3.1.6 perform the following:
 
-. Select Association from the palette and draw association from 'part<N>' to 'form<N>'.
+. Select 'Classes -> Association' from the palette and draw association from
+  'part<N>' to 'form<N>'.
 . *See* pop-up association dialogue.
 . *See* participant classes named along left and right sides of dialogue box.
 . *See* editable empty role phrase boxes.
@@ -144,7 +145,8 @@ For each of 3.1.7 through 3.1.12 perform the following:
 
 For each of 3.2.1 through 3.2.6 perform the following:
 
-. Select Association from the palette and draw association from 'one<N>' to 'other<N>'.
+. Select 'Classes -> Association' from the palette and draw association from
+  'one<N>' to 'other<N>'.
 . *See* pop-up association dialogue.
 . *See* participant classes named along left and right sides of dialogue box.
 . *See* editable empty role phrase boxes.
