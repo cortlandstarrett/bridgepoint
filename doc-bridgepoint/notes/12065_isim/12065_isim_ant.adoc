@@ -102,7 +102,7 @@ This approach is feasible and a useful first step.  This approach is selected.
 == 5.2 Work Required for iCCG API (Read-API)
 
 This work is built as a model-based model compiler which will query OOAofOOA
-instances and populate iOOAofOOA instance.  An application programming
+instances and populate iOOAofOOA instances.  An application programming
 interface is provided that is compatible with the iCCG Read-API which is
 invoked by iCCG and traverses the iOOAofOOA returning instance data on
 demand.
